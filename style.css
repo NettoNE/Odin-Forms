@@ -148,12 +148,12 @@ aside.logo-container {
   box-shadow: var(--border-shadow);
 
   background-color: var(--bg-input);
+
+  transform: var(--transform-default);
+  transition: var(--transition-fast);
 }
 
 .input-group input:focus {
-  transform: var(--transform-default);
-  transition: var(--transition-fast);
-
   outline-color: var(--blue-outline);
   box-shadow: var(--border-shadow-focus);
 }
@@ -200,21 +200,12 @@ aside.logo-container {
 
 /* links */
 
-a:link,
-a:visited {
+a {
+  text-decoration: none;
   color: var(--green);
 }
-
-a:hover,
-a:active {
+a:hover {
   color: var(--green-dark);
-}
-
-a:link,
-a:visited,
-a:hover,
-a:active {
-  text-decoration: none;
 }
 
 /* simple small screen breakpoint */
