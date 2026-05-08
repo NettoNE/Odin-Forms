@@ -1,14 +1,14 @@
 /* Norse */
 @font-face {
   font-family: "Norse";
-  src: url("../assets/fonts/norse/Norse.otf") format("opentype");
+  src: url("assets/fonts/norse/Norse.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Norse";
-  src: url("../assets/fonts/norse/Norsebold.otf") format("opentype");
+  src: url("assets/fonts/norse/Norsebold.otf") format("opentype");
   font-weight: bold;
   font-style: normal;
 }
