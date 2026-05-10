@@ -1,216 +1,272 @@
 /* Norse */
 @font-face {
-  font-family: "Norse";
-  src: url("assets/fonts/norse/Norse.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
+	font-family: "Norse";
+	src: url("assets/fonts/norse/Norse.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: "Norse";
-  src: url("assets/fonts/norse/Norsebold.otf") format("opentype");
-  font-weight: bold;
-  font-style: normal;
+	font-family: "Norse";
+	src: url("assets/fonts/norse/Norsebold.otf") format("opentype");
+	font-weight: bold;
+	font-style: normal;
 }
 
 /* reset */
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 :root {
-  --main-font: "Inter", sans-serif;
-  --norse-font: "Norse", sans-serif;
+	--main-font: "Inter", sans-serif;
+	--norse-font: "Norse", sans-serif;
 
-  --grey: #f9fafb;
-  --grey-dark: #515151;
-  --white: #ffffff;
-  --green: #586c47;
-  --green-dark: #344a21;
-  --bg-input: #fffefe;
+	--grey: #f9fafb;
+	--grey-dark: #515151;
+	--white: #ffffff;
+	--green: #586c47;
+	--green-dark: #344a21;
+	--bg-input: #fffefe;
 
-  --blue-outline: #5378e1;
-  --red-outline: #e84040;
-  --green-outline: #2ecc71;
+	--blue-outline: #5378e1;
+	--red-outline: #e84040;
+	--green-outline: #2ecc71;
 
-  --border-shadow:
-    0px 0px 0px 1px rgba(39, 39, 39, 0.05), 0px 0px 0px 1px #e0e0e0;
-  --border-shadow-bottom: 0 8px 6px -4px rgba(0, 0, 0, 0.3);
-  --border-shadow-focus: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	--border-shadow:
+		0px 0px 0px 1px rgba(39, 39, 39, 0.05), 0px 0px 0px 1px #e0e0e0;
+	--border-shadow-bottom: 0 8px 6px -4px rgba(0, 0, 0, 0.3);
+	--border-shadow-focus: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
-  --transform-default: scale(1.04);
-  --transition-fast: 0.2s all ease;
+	--transform-default: scale(1.04);
+	--transition-fast: 0.2s all ease;
 }
 
 body {
-  display: flex;
-  font-family: var(--main-font);
-  min-height: 100vh;
-  margin: 0 auto;
+	display: flex;
+	font-family: var(--main-font);
+	min-height: 100vh;
+	margin: 0 auto;
 }
 
 aside.logo-container {
-  font-family: var(--norse-font);
+	font-family: var(--norse-font);
 
-  width: 20vw;
-  max-width: 50rem;
-  min-width: 30rem;
+	width: 20vw;
+	max-width: 50rem;
+	min-width: 30rem;
 
-  position: relative;
+	position: relative;
 
-  background: var(--white) url("assets/img/logo-background.jpg") no-repeat
-    center/cover;
-  background-color: var(--white);
+	background: var(--white) url("assets/img/logo-background.jpg") no-repeat
+		center/cover;
+	background-color: var(--white);
 }
 
 .logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
-  max-height: 10rem;
+	max-height: 10rem;
 
-  position: absolute;
-  top: 3rem;
+	position: absolute;
+	top: 3rem;
 
-  width: 100%;
+	width: 100%;
 }
 
 .logo h1 {
-  font-size: 5rem;
-  color: var(--white);
+	font-size: 5rem;
+	color: var(--white);
 }
 
 .logo img {
-  height: 7rem;
+	height: 7rem;
 }
 
 .wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
 }
 
 .hero {
-  display: flex;
-  background-color: var(--grey);
-  flex-direction: column-reverse;
-  flex: 2;
+	display: flex;
+	background-color: var(--grey);
+	flex-direction: column-reverse;
+	flex: 2;
 
-  font-weight: 500;
-  font-size: 1.5rem;
+	font-weight: 500;
+	font-size: 1.5rem;
 }
 .hero .text {
-  padding: 2rem;
-  max-width: 50rem;
+	padding: 2rem;
+	max-width: 50rem;
 }
 
 .hero .text p {
-  margin: 0;
+	margin: 0;
 }
 
 .hero .text p:last-child {
-  margin: 1rem 0;
+	margin: 1rem 0;
 }
 
 .login-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 
-  background-color: var(--white);
-  flex: 1;
+	background-color: var(--white);
+	flex: 1;
 
-  padding: 1rem 3rem;
+	padding: 1rem 3rem;
 
-  border: none;
-  box-shadow: var(--border-shadow-bottom);
-  z-index: 9999; /* sobreposição */
+	border: none;
+	box-shadow: var(--border-shadow-bottom);
+	z-index: 9999; /* sobreposição */
 }
 
 .input-group {
-  color: var(--grey-dark);
-  font-weight: 500;
-  display: flex;
-  gap: 10px;
+	color: var(--grey-dark);
+	font-weight: 500;
+	display: flex;
+	gap: 10px;
 
-  margin: 1rem 0;
-
-  position: relative;
+	margin: 1rem 0;
 }
 
 .input-group input {
-  padding: 0.7rem;
-  width: 20rem;
+	margin: 0 0.4rem;
+	padding: 0.7rem;
+	width: 20rem;
 
-  border-radius: 3px;
-  border: none;
-  box-shadow: var(--border-shadow);
+	border-radius: 3px;
+	border: none;
+	box-shadow: var(--border-shadow);
 
-  background-color: var(--bg-input);
+	background-color: var(--bg-input);
 
-  transform: var(--transform-default);
-  transition: var(--transition-fast);
+	transform: var(--transform-default);
+	transition: var(--transition-fast);
 }
 
 .input-group input:focus {
-  outline-color: var(--blue-outline);
-  box-shadow: var(--border-shadow-focus);
+	outline-color: var(--blue-outline);
+	box-shadow: var(--border-shadow-focus);
 }
 
 .input-group input:user-invalid {
-  outline-color: var(--red-outline);
+	outline-color: var(--red-outline);
 }
 
 .input-group input:valid {
-  border-color: var(--green-outline);
+	border-color: var(--green-outline);
 }
 
 .input-group div {
-  display: flex;
-  flex-direction: column;
-  margin-right: 5rem;
-  gap: 5px;
+	display: flex;
+	flex-direction: column;
+	margin-right: 5rem;
+	gap: 5px;
 }
 
 .last-container {
-  background-color: var(--grey);
-  flex: 2;
+	background-color: var(--grey);
+	flex: 2;
 
-  padding: 3rem;
+	padding: 3rem;
 }
 
 #createAccountBtn {
-  color: var(--white);
-  font-size: 1rem;
-  font-weight: 600;
+	color: var(--white);
+	font-size: 1rem;
+	font-weight: 600;
 
-  border: none;
-  border-radius: 5px;
-  background-color: var(--green);
+	border: none;
+	border-radius: 5px;
+	background-color: var(--green);
 
-  padding: 15px;
-  width: 12rem;
-  box-shadow: var(--border-shadow-bottom);
+	padding: 15px;
+	width: 12rem;
+	box-shadow: var(--border-shadow-bottom);
 }
 
 #createAccountBtn:hover {
-  background-color: var(--green-dark);
+	background-color: var(--green-dark);
+}
+
+#createAccountBtn:focus {
+	outline-color: var(--blue-outline);
+}
+
+/* special */
+
+.box-teste {
+	display: none;
+	flex-direction: column;
+	padding: 0;
+
+	background-color: #ebebebe7;
+
+	border: solid rgba(194, 198, 231, 0.793) 1px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	height: 100px;
+	width: 300px;
+
+	border-radius: 3px;
+}
+
+.box-teste .title-header {
+	margin: 0;
+	padding: 0;
+
+	background-color: #ffb32f;
+
+	/* border-bottom: solid grey 1px; */
+	width: 100%;
+
+	height: 15%;
+	font-size: 0.7rem;
+}
+
+.box-teste .title-header p {
+	margin: 0 2px 0;
+	padding: 0;
+}
+
+.tooltip-password-regex,
+.tooltip-password-not-same {
+	display: none;
+	font-size: 0.7rem;
+	color: red;
+
+	/* position: absolute; */
+	/* bottom: -5rem; */
+
+	margin: 0 2px 0;
+	padding: 0;
+	/* z-index: 9998; */
+}
+
+.tooltip-password-regex {
+	margin-bottom: 10px;
 }
 
 /* links */
 
 a {
-  text-decoration: none;
-  color: var(--green);
+	text-decoration: none;
+	color: var(--green);
 }
 a:hover {
-  color: var(--green-dark);
+	color: var(--green-dark);
 }
 
 /* simple small screen breakpoint */
 @media (max-width: 1300px) {
-  aside {
-    display: none;
-  }
+	aside {
+		display: none;
+	}
 }

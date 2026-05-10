@@ -1,75 +1,102 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <aside class="logo-container">
-        <div class="logo">
-            <img src="assets/img/odin-lined.png" alt="">
-            <h1>ODIN Forms</h1>
-        </div>
-    </aside>
-    <main class="wrapper">
-        <div class="hero">
-            <div class="text">
-            <p>This is not a real online service! You know you need something
-               like this in your life to help you realize your deepest dreams.
-            </p>
-            <p>
-               Sign up <em>now</em> to get started.
-            </p>
-            <p>
-               You <em>know</em> you want to.
-            </p>
-            </div>
-        </div>
-        <div class="login-container">
-            <h1>Let's do this!</h1>
-            <form action="">
-                <div class="input-group">
-                    <div class="* name">
-                        <label for="name">* NAME</label>
-                        <input type="text" name="name" id="name" required>
-                    </div>
-                    <div class="last-name">
-                        <label for="lastName">LASTNAME</label>
-                        <input type="text" name="lastname" id="lastName">
-                    </div>
-                </div>
-                <div class="input-group">
-                    <div>
-                        <label for="email">* EMAIL</label>
-                        <input type="email" name="email" id="email" placeholder="mail@example.com" required>
-                    </div>
-                    <div>
-                        <label for="tel">* PHONE</label>
-                        <input type="tel" name="tel" id="phone" placeholder="+99 (99) 9999-9999" required>
-                    </div>
-                </div>
-                <div class="input-group">
-                    <div>
-                        <label for="password">* PASSWORD</label>
-                        <input type="password" name="password" id="password" required>
-                    </div>
-                    <div>
-                        <label for="confirmPassword">* CONFIRM PASSWORD</label>
-                        <input type="password" name="confirmPassword" id="confirmPassword" required>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <div class="last-container">
-            <button id="createAccountBtn">Create Account</button>
-            <p>Already have an account? <a href="#">Log in</a></p>
-        </div>
-    </main>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<aside class="logo-container">
+			<div class="logo">
+				<img src="assets/img/odin-lined.png" alt="" />
+				<h1>ODIN Forms</h1>
+			</div>
+		</aside>
+		<main class="wrapper">
+			<div class="hero">
+				<div class="text">
+					<p>
+						This is not a real online service! You know you need something like
+						this in your life to help you realize your deepest dreams.
+					</p>
+					<p>Sign up <em>now</em> to get started.</p>
+					<p>You <em>know</em> you want to.</p>
+				</div>
+			</div>
+			<div class="login-container">
+				<h1>Let's do this!</h1>
+				<form action="">
+					<div class="input-group">
+						<div class="* name">
+							<label for="name">* NAME</label>
+							<input type="text" name="name" id="name" required />
+						</div>
+						<div class="last-name">
+							<label for="lastName">LASTNAME</label>
+							<input type="text" name="lastname" id="lastName" />
+						</div>
+					</div>
+					<div class="input-group">
+						<div>
+							<label for="email">* EMAIL</label>
+							<input
+								type="email"
+								name="email"
+								id="email"
+								placeholder="mail@example.com"
+								required
+							/>
+						</div>
+						<div>
+							<label for="tel">* PHONE</label>
+							<input
+								type="tel"
+								name="tel"
+								id="phone"
+								placeholder="+99 (99) 9999-9999"
+								required
+							/>
+						</div>
+					</div>
+					<div class="input-group">
+						<div>
+							<label for="password">* PASSWORD</label>
+							<input type="password" name="password" id="password" required />
+						</div>
+						<div>
+							<label for="confirmPassword">* CONFIRM PASSWORD</label>
+							<input
+								type="password"
+								name="confirmPassword"
+								id="confirmPassword"
+								required
+							/>
+						</div>
+					</div>
+					<div class="box-teste">
+						<div class="title-header"><p>Atenção!</p></div>
+						<p class="tooltip-password-regex">
+							* A senha precisa ter pelo menos 8 caracteres, uma letra maiúscula,
+							uma ninúscula, um número e um caractere especial!
+						</p>
+						<p class="tooltip-password-not-same">* As senhas não batem!</p>
+					</div>
+				</form>
+			</div>
+			<div class="last-container">
+				<button id="createAccountBtn">Create Account</button>
+				<p>Already have an account? <a href="#">Log in</a></p>
+
+				<script src="passwordCheck.js"></script>
+			</div>
+		</main>
+	</body>
 </html>
